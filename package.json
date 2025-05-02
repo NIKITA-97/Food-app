@@ -1,0 +1,37 @@
+{
+  "name": "namaste-react",
+  "version": "1.0.0",
+  "description": "react tutorial",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NIKITA-97/namaste-react-project.git"
+  },
+  "keywords": [
+    "react"
+  ],
+  "author": "Nikita",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NIKITA-97/namaste-react-project/issues"
+  },
+  "homepage": "https://github.com/NIKITA-97/namaste-react-project#readme",
+  "devDependencies": {
+    "parcel": "^2.9.3",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "formik": "^2.4.6",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.23.0",
+    "yup": "^1.4.0"
+  },
+  "browserlist": [
+    "last 2 versions"
+  ]
+}

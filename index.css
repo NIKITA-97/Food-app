@@ -1,0 +1,348 @@
+ #heading{color: red;}
+.header{display: flex; justify-content: space-between;border: 1px solid black;}
+.nav-items ul{display: flex;}
+.nav-items ul li{padding: 10px;list-style: none;font-size: 20px;margin: 10px;}
+.logo{width: 200px;}
+.res-card{width: 250px;border: 1px solid black; padding: 5px; cursor: pointer;margin: 5px;}
+.res-card:hover{box-shadow: 2px 3px 5px #000;}
+.res-container{display: flex;}
+.search{padding: 10px;}
+.food-img{width: 100%;}
+
+
+.main-container {
+    font-family:sans-serif;
+}
+
+.res-header {
+    display: flex;
+    background: whitesmoke;
+    align-items: center;
+    height: 10vh;
+    justify-content: space-between;
+}
+
+.res-nav-items > ul {
+    display: flex;
+    list-style-type: none;
+    font-size: 1.25em;
+    padding-left: 40em;
+}
+
+.res-nav-items > ul > li {
+    padding-left: 1em;
+}
+
+.res-nav-items > ul > li:hover {
+    cursor: pointer;
+}
+
+.res-cart-img {
+    width: 4%;
+}
+
+.res-logo-logo {
+    width: 4%;
+    padding: 1em;
+}
+
+.res-card {
+    height: auto;
+    width: 18vw;
+    margin: 0.5vw;
+    border-radius: 0.5em;
+    background: lightgray;
+}
+
+.res-card > h3 {
+    font-weight: bolder;
+    padding-left: 0.5em;
+}
+
+.res-card > h4 {
+    font-weight: 100;
+    padding-left: 0.5em;
+}
+
+.res-card:hover {
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.res-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.res-img {
+    width: 17.5vw;
+    padding: 0.25em;
+    height: 30vh;
+}
+
+.searchDiv {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.searchBar {
+    width: 30vw;
+    height: 5vh;
+    margin-top: 1em;
+}
+.filter-btn{margin: 10px;padding: 8px;cursor: pointer;}
+
+.shimmer-card{height: 300px; width: 300px; background-color: #f0f0f0; margin: 15px;}
+.shimmer-container{display: flex; flex-wrap: nowrap;}
+.login{padding: 10px 20px; cursor: pointer;}
+.searchbtn {padding: 10px 20px;} 
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+   
+    position: relative;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  /* nav */
+  .nav {
+    margin: 15px;
+    display: flex;
+    height: 70px;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid black; */
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    position: sticky;
+    top: 0;
+    border-radius: 15px;
+    background-color: aliceblue;
+  }
+  
+  .nav > img {
+    padding: 5px;
+    margin-left: 30px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+  }
+  .nav > ul {
+    margin-right: 30px;
+    list-style-type: none;
+    display: flex;
+  }
+  
+  .nav > ul > .link > li {
+    padding: 0 8px;
+    text-decoration: none;
+  }
+  
+  .link {
+    color: black;
+    text-decoration: none;
+  }
+  
+  /* restaurant card */
+  
+  .restaurant {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  
+  .card {
+    background-color: rgb(245, 245, 245);
+    width: 250px;
+  
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  }
+  
+  .card > img {
+    padding-top: 10px;
+    width: 200px;
+    height: 200px;
+    border-radius: 15px;
+  }
+  
+  .description {
+    padding: 10px;
+    margin-top: 20px;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .description > h2 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  .description > p {
+    font-size: 14px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  .card:hover {
+    cursor: pointer;
+    border: 1px solid black;
+  }
+  
+  /* search */
+  #search-input {
+    margin-left: 50px;
+    padding: 10px;
+    background: none;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid salmon;
+  }
+  
+  .search-btn {
+    padding: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .search-btn:hover {
+    transform: scale(1.1);
+    transition: transform ease 0.1s;
+  }
+  /* filter */
+  .filter-btn {
+    margin: 10px 10px 10px 50px;
+    cursor: pointer;
+    padding: 10px;
+  }
+  
+  /* shimmer UI */
+  
+  .shimmer-container {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .shimmer-card {
+    margin: 10px;
+    padding: 10px;
+    width: 250px;
+    height: 300px;
+    border-radius: 15px;
+    background-color: #f0f0f0;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  }
+  
+  /* Login */
+  .login-btn {
+    width: 60px;
+    padding: 0 8px;
+    cursor: pointer;
+  }
+  
+  #search-btn {
+    margin: 10px;
+    cursor: pointer;
+    padding: 10px;
+  }
+  .search-box {
+    margin: 10px 10px 10px 50px;
+    padding: 10px;
+    border: none;
+  }
+  
+  /* restaurant menu card */
+  .restaurant-menu {
+    margin: 0 auto;
+  }
+  .restaurant-card {
+    margin: 0 auto;
+    display: flex;
+    width: 750px;
+    height: 200px;
+    padding: 10px;
+    background-color: azure;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+  .restaurant-card #res-image {
+    width: 100%;
+    height: 100%;
+  }
+  .restaurant-card > .res-info {
+    padding: 10px;
+  }
+  
+  /* res-item */
+  
+  .res-item {
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    width: 750px;
+    padding: 10px;
+    background-color: azure;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+  .item-li {
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    margin: 5px 0;
+  }
+  .res-item > li {
+    list-style: none;
+  }
+  .res-item > li > .item-img {
+    width: 50%;
+    height: auto;
+  }
+  .res-item > li > .item-img > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .res-item-details {
+    padding: 8px;
+    width: 100%;
+    overflow: hidden;
+  }
+  .item-rating {
+    margin: 5px 0;
+  }
+  .item-description {
+    font-size: 12px;
+    padding: 5px 0;
+  }
+  
+  /* footer */
+  .footer {
+    display: block;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+  }
+
+  .user-card{padding: 15px;
+  border: 1px solid black;}
